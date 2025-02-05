@@ -38,10 +38,9 @@ h1,h2,h3,h4,h5,h6{padding-top: 0.40%; padding-bottom: 0.25%;}
 }
 
 .content img{
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    box-shadow: 5px 5px 2px  var(--rox);
-    border-radius: 12px; margin-top: 2.5%;
-}
-
+    max-width: 250px;
+    max-height: 250px;
+    object-position: center;
+    box-shadow: 5px 7px 10px  var(--rox);
+    border-radius: 12px;
+    }

@@ -1,0 +1,73 @@
+/*CONFIGS GERAIS DO SITE*/
+*{margin: 0; border: 0; padding: 0;}
+html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
+body{background-color: black;}
+main{background-color: white;  
+    padding: 1.5%; margin: auto; width: 90%; margin-top: 20px;
+    border-radius: 12px; 
+    box-shadow: 5px 5px 2px var(--colornvidia) ;   
+    }
+
+/*variaveis*/
+:root{
+    --colornvidia:#76b900;
+}
+/*sem uso por enquanto*/
+aside{
+     background-color: white;  
+     padding: 1.5%; margin: auto; width: 90%;
+     border-radius: 12px; 
+     box-shadow: 5px 5px 2px  var(--colornvidia);
+     margin-top: 20px; 
+ }
+
+ /*Cabeçalho*/
+header{background:linear-gradient(to right,var(--colornvidia),#000000,#000000); color: white; padding: 1%;
+    position: fixed; width: 100%; z-index: 1000; top: 0px;
+}
+
+/*rodapé*/
+footer{
+    background:linear-gradient(to right,var(--colornvidia),#000000,#000000); color: white; padding: 1%;
+    text-align: center;
+}
+
+/*Titulos do site*/
+h1{font-size: 2em; margin-top: 2%;}
+h2{font-size: 1.5em;}
+h3{font-size: 2em;}
+h4{font-size: 0.7em}
+h1,h2,h3,h4,h5,h6{padding-top: 0.40%; padding-bottom: 0.25%;}
+
+/*section processadores*/
+#recomenda{
+   background-color: white;  
+        padding: 1.5%; margin: auto; width: 90%; margin-top: 20px;
+        border-radius: 12px; 
+        box-shadow: 5px 5px 2px  var(--colornvidia);   
+        
+}
+/*separação*/
+.separador{
+    margin-top: 10%;/*seprador geral, caso necessario criar outro */
+}
+
+.seprador_aside{
+    margin-top:5% /*separador aside do main*/
+}
+
+/*Configurações dos paragrafos/textos*/
+p{
+    padding-top: 1%; padding-bottom: 1%;
+}
+
+/*responsividade celular*/
+@media(min-width: 300px) and (max-width:1024px){
+    p{padding-top: 2.5%; padding-bottom: 2.5%;}
+ }
+
+ /*divs celulares*/
+ @media(min-width:300px) and (max-width: 1024px){
+    .separador{margin-top: 23%;}
+    .seprador_aside{margin-top: 5%;}
+}

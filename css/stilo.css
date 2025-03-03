@@ -27,14 +27,12 @@ aside{
 
 /*cabeçalho*/
 header{background:linear-gradient(to right,black,black,var(--rox),var(--rox),black); color: white; padding: 1%;
-        position: fixed; width: 100%; z-index: 1000;
+    position: fixed; width: 100%; z-index: 1000;
 }
 
 /*configs links*/
 nav{display: block; text-align: center; padding: 5px; word-spacing: 15px;}
 
-a{color: aliceblue; text-decoration:none;}
-a:hover{color: black;}
 
 /*rodapé*/
 footer{
@@ -71,6 +69,9 @@ h1,h2,h3,h4,h5,h6{padding-top: 0.40%; padding-bottom: 0.25%;}
 .content img:hover{
     transform: translateY(-5px);
 }
+
+a{color: aliceblue; text-decoration:none;}
+a:hover{color: black;}
 
 /*Cores para destaque*/
 .cor_1{
@@ -173,3 +174,4 @@ button:hover{background: var(--azulclar);
     #conteudo_config{margin-bottom: 5%;}
 
 }
+

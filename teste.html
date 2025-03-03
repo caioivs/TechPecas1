@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Processadores</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f4f4f4; }
+        select { margin-top: 10px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Selecione a Geração:</h2>
+    <select id="filtro" onchange="filtrarTabela()">
+        <option value="todos">Todos</option>
+        <option value="ryzen3">Ryzen 3</option>
+        <option value="ryzen5">Ryzen 5</option>
+        <option value="ryzen7">Ryzen 7</option>
+        <option value="ryzen9">Ryzen 9</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Geração</th>
+                <th>Clock Base</th>
+                <th>Núcleos/Threads</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ryzen3">
+                <td>Ryzen 3 3100</td>
+                <td>Ryzen 3</td>
+                <td>3.6 GHz</td>
+                <td>4/8</td>
+            </tr>
+            <tr class="ryzen5">
+                <td>Ryzen 5 5600X</td>
+                <td>Ryzen 5</td>
+                <td>3.7 GHz</td>
+                <td>6/12</td>
+            </tr>
+            <tr class="ryzen7">
+                <td>Ryzen 7 5800X</td>
+                <td>Ryzen 7</td>
+                <td>3.8 GHz</td>
+                <td>8/16</td>
+            </tr>
+            <tr class="ryzen9">
+                <td>Ryzen 9 5900X</td>
+                <td>Ryzen 9</td>
+                <td>3.7 GHz</td>
+                <td>12/24</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function filtrarTabela() {
+            let filtro = document.getElementById("filtro").value;
+            let linhas = document.querySelectorAll("tbody tr");
+            
+            linhas.forEach(linha => {
+                if (filtro === "todos" || linha.classList.contains(filtro)) {
+                    linha.style.display = "";
+                } else {
+                    linha.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

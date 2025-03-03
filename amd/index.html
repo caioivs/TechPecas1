@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/logo-tech.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/amd.css">
+    <script src="../javascriptamd/tabela.js"></script>
+    <title>TechPeças</title>
+
+</head>
+    <body>
+        <header>
+            <h3>TechPeças</h3>
+            <br>
+            <h4>Informações Tecnológicas!</h4>
+        </header>
+
+        <div class="separador"></div>
+            <select  id="filtro" onchange="filtrarTabela()">
+                <option value="todos">Todas Gerações</option>
+                <option value="ryzen5000">Ryzen 5000</option>
+                <option value="ryzen7000">Ryzen 7000</option>
+                <option value="ryzen9000">Ryzen 9000</option>
+            </select>
+             <main> 
+                    <table id="content_tabela">
+                        <thead>
+                            <tr>
+                                <th>Nome do Processador</th>
+                            <th>Nº de núcleos</th>
+                            <th>Nº de Threads</th>
+                            <th>Clock Máx</th>
+                            <th>Clock Básico</th>
+                            <th>TDP Padrão</th>
+                            </tr>
+                        </thead>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 3 5305G</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>Até 4.2 GHz</td>
+                            <td>4 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 5 5500</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 4.2 GHz</td>
+                            <td>3.6 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 5 5600</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 4.4 GHz</td>
+                            <td>3.6 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 5 5600X</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 4.6 GHz</td>
+                            <td>3.7 GHz</td>
+                            <td>65W</td>
+                        </tr class="ryzen5000">
+                        <tr>
+                            <td>AMD Ryzen™ 5 5600X3D</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 4.4 GHz</td>
+                            <td>3.3 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 7 5700</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 4.6 GHz</td>
+                            <td>3.7 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 7 5700X</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 4.6 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 7 5700X3D</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 4.1 GHz</td>
+                            <td>3 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 7 5800X</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 4.7 GHz</td>
+                            <td>3.8 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen5000">
+                            <td>AMD Ryzen™ 7 5800X3D</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 4.5 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 5 7600</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.1 GHz</td>
+                            <td>3.8 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 5 7600X</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.3 GHz</td>
+                            <td>4.7 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 5 7600X3D</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 4.7 GHz</td>
+                            <td>4.1 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 7 7700</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.3 GHz</td>
+                            <td>3.8 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 7 7700X</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.4 GHz</td>
+                            <td>4.5 GHz</td>
+                            <td>105W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 7 7800X3D</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5 GHz</td>
+                            <td>4.2 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 9 7900X</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>4.7 GHz</td>
+                            <td>170W</td>
+                        </tr>
+                        <tr class="ryzen7000">
+                            <td>AMD Ryzen™ 9 7900X3D</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>4.4 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr class="ryzen9000">
+                            <td>AMD Ryzen™ 5 9600</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.2 GHz</td>
+                            <td>3.8 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 5 9600X</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.4 GHz</td>
+                            <td>3.9 GHz</td>
+                            <td>65W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 7 9700X</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.5 GHz</td>
+                            <td>3.8 GHz/td>
+                            <td>65W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 7 9800X3D</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.2 GHz</td>
+                            <td>4.7 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9900X</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>4.4 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9900X3D</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>4.4 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9950X</td>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>Até 5.7 GHz</td>
+                            <td>4.3 GHz</td>
+                            <td>170W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9900X3D</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.5 GHz</td>
+                            <td>4.4 GHz</td>
+                            <td>120W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9950X</td>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>Até 5.7 GHz</td>
+                            <td>4.3 GHz</td>
+                            <td>170W</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen™ 9 9950X3D</td>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>Até 5.7 GHz</td>
+                            <td>4.3 GHz</td>
+                            <td>170W</td>
+                        </tr>
+                    </table>        
+             </main>
+
+            
+
+            <aside>
+                <h2>Placas de Video</h2>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                
+            
+            </aside>
+
+        <section id="recomenda">
+            <h2>Algumas recomendações!</h2>
+        </section>
+        
+    </body>
+
+        <br>
+        <div class="separador_aside"></div>
+        <br>
+    <footer>
+        <!--Informações/contatos-->
+        <p>
+            Contato: ce.costa2015@gmail.com<br>
+            WhatsApp: (37) 99855-4600            
+        </p>
+    </footer>
+</html>

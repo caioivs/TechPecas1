@@ -18,8 +18,17 @@ aside{
 
  select {
     margin-top: 10px; padding: 5px;
-    color: black;
+    border-radius: 20px; 
 }
+
+.centerselect{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
  /*Cabeçalho*/
 header{background:linear-gradient(to right,#f26522,#000000,#000000); color: white; padding: 1%;
     position: fixed; width: 100%; z-index: 1000; top: 0px;

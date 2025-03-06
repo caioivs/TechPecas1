@@ -71,3 +71,42 @@ p{
     .separador{margin-top: 23%;}
     .seprador_aside{margin-top: 5%;}
 }
+/*tabelas*/
+
+
+td,th{
+border: 2px solid black; padding: 8px; text-align: center;
+}
+
+th{
+background:linear-gradient(to right,var(--colornvidia),var(--colornvidia), black);
+font-weight:bold;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+li{
+margin-bottom: 10px;
+}
+
+#tabela_nvidia{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+}
+/*select*/
+select {
+    margin-top: 10px; padding: 5px;
+    border-radius: 20px; 
+}
+
+.centerselect{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-decoration: solid;
+    cursor: pointer;
+}
+/*texto_recomendação*/

@@ -1,6 +1,6 @@
-function filtrarTabela() {
-    let filtro = document.getElementById("filtro").value;
-    let linhas = document.querySelectorAll("tbody tr");
+function filtrarTabela(filtroId, tabelaId) {
+    let filtro = document.getElementById(filtroId).value;
+    let linhas = document.querySelectorAll(`#${tabelaId} tbody tr`);
     
     linhas.forEach(linha => {
         if (filtro === "todos" || linha.classList.contains(filtro)) {
@@ -11,14 +11,3 @@ function filtrarTabela() {
     });
 }
 
-function filtraTabelaVideo(){
-    let filtro_video = document.getElementById("filtro_video").value
-    let linha_2 = document.querySelectorAll("tbody tr");
-    linhas.forEach(linha => {
-        if (filtro_video === "todos" || linha.classList.contains(filtro_video)) {
-            linha_2.style.display = "";
-        } else {
-            linha_2.style.display = "none";
-        }
-    });
-}

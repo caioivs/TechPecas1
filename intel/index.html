@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo-tech.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/intel.css">
+    <script src="../javascriptamd/tabela.js"></script>
     <title>TechPeças</title>
 
 </head>
@@ -16,30 +17,188 @@
         </header>
 
         <div class="separador"></div>
-
-            <main>
-                <article>
-                    <h2>Processadores AMD</h2>
-                    <p>Algum processador</p>
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                </article>
+                <div class="separador"></div>
+                <div class="table-container">
+                    <div class = "centerselect">  
+                        <select  id="filtro" onchange="filtrarTabela('filtro','tabela_intel')">
+                            <option value="todos">Todas Gerações</option>
+                            <option value="ger13">Geração 13</option>
+                            <option value="ger14">Geração 14</option>
+                        </select>
+                </div>
+            <main> 
+            <div class="processador">    
+                <table id="tabela_intel">
+                    <thead>
+                        <tr class="todos">
+                            <th>Nome do Processador</th>
+                            <th>Nº de núcleos</th>
+                            <th>Nº de Threads</th>
+                            <th>Clock Máx</th>
+                            <th>Clock Básico</th>
+                            <th>TDP Padrão</th>
+                        </tr>
+                    </thead>    
+                        <tr class="ger13">
+                            <td>Intel Core i5-13600K</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.1 GHz</td>
+                            <td>3.5 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger13">
+                            <td>Intel Core i5-13600KF</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.1 GHz</td>
+                            <td>3.5 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger13">
+                            <td>Intel Core i7-13700K</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.4 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger13">
+                            <td>Intel Core i7-13700KF</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.4 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger13">
+                            <td>Intel Core i9-13900K</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.8 GHz</td>
+                            <td>3.0 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger13">
+                            <td>Intel Core i9-13900KF</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 5.8 GHz</td>
+                            <td>3.0 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i5-14600K</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.3 GHz</td>
+                            <td>3.5 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i5-14600KF</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>Até 5.3 GHz</td>
+                            <td>3.5 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i7-14700K</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i7-14700KF</td>
+                            <td>8</td>
+                            <td>16</td>
+                            <td>Até 5.6 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i9-14900K</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 6.0 GHz</td>
+                            <td>3.2 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i9-14900KF</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 6.0 GHz</td>
+                            <td>3.2 GHz</td>
+                            <td>125W</td>
+                        </tr>
+                        <tr class="ger14">
+                            <td>Intel Core i9-14900KS</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>Até 6.2 GHz</td>
+                            <td>3.4 GHz</td>
+                            <td>150W</td>
+                        </tr>                              
+                </table>  
+            </div>    
             </main>
 
-            <aside>
-                <h2>Placas de Video</h2>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-            
-            </aside>
 
         <section id="recomenda">
-            <h2>Algumas recomendações!</h2>
+                <h2>Algumas recomendações!</h2>
+                <p>
+                    Se você está montando um PC gamer ou deseja atualizar seu setup, escolher o processador certo faz toda a diferença. 
+                    A Intel tem se destacado com sua linha de processadores Core de 13ª e 14ª geração, oferecendo alto desempenho para jogos, 
+                    produtividade e criação de conteúdo. Confira abaixo algumas das melhores opções!
+                </p>
+                
+                <h3>🔥 Processadores Intel: Qual escolher?</h3>
+                
+                <h4>💻 Intel Core i5-14600K – Melhor custo-benefício para jogos em Full HD</h4>
+                <ul>
+                    <li><strong>Núcleos/Threads:</strong> 6/12</li>
+                    <li><strong>Clock Base/Turbo:</strong> 3.5GHz / 5.3GHz</li>
+                    <li><strong>TDP:</strong> 125W</li>
+                    <li><strong>Indicado para:</strong> Jogos em 1080p, produtividade leve e multitarefa.</li>
+                </ul>
+                
+                <h4>⚡ Intel Core i7-14700K – Poder para gamers e criadores de conteúdo</h4>
+                <ul>
+                    <li><strong>Núcleos/Threads:</strong> 8/16</li>
+                    <li><strong>Clock Base/Turbo:</strong> 3.4GHz / 5.6GHz</li>
+                    <li><strong>TDP:</strong> 125W</li>
+                    <li><strong>Indicado para:</strong> Jogos em altas taxas de FPS, streaming e edição de vídeo.</li>
+                </ul>
+                
+                <h4>🚀 Intel Core i9-14900K – O máximo desempenho para games e criação</h4>
+                <ul>
+                    <li><strong>Núcleos/Threads:</strong> 12/24</li>
+                    <li><strong>Clock Base/Turbo:</strong> 3.2GHz / 6.0GHz</li>
+                    <li><strong>TDP:</strong> 125W</li>
+                    <li><strong>Indicado para:</strong> Gamers exigentes, profissionais de renderização e edição pesada.</li>
+                </ul>
+                
+                <h4>⚡ Intel Core i9-14900KS – O mais rápido da linha Intel</h4>
+                <ul>
+                    <li><strong>Núcleos/Threads:</strong> 12/24</li>
+                    <li><strong>Clock Base/Turbo:</strong> 3.4GHz / 6.2GHz</li>
+                    <li><strong>TDP:</strong> 150W</li>
+                    <li><strong>Indicado para:</strong> Entusiastas que buscam o máximo desempenho em games e produtividade.</li>
+                </ul>
+                
+                <h3>💡 Conclusão</h3>
+                <p>
+                    A Intel continua sendo uma das melhores opções para quem busca desempenho de ponta, seja para jogos competitivos, edição de vídeo ou tarefas exigentes. 
+                    Com sua tecnologia avançada e frequências turbo elevadas, os processadores Intel Core da 13ª e 14ª geração oferecem excelente performance para diferentes perfis de usuários.
+                </p>
+                <p>
+                    Se você está pensando em montar ou atualizar seu PC, considere essas recomendações para obter o melhor desempenho possível. Quer mais dicas? 
+                    Continue acompanhando o <strong>TechPeças</strong> para ficar por dentro das novidades do mundo do hardware! 🚀
+                </p>
         </section>
         
     </body>

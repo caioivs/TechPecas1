@@ -70,7 +70,9 @@ h1,h2,h3,h4,h5,h6{padding-top: 0.40%; padding-bottom: 0.25%;}
     transform: translateY(-5px);
 }
 
-a{color: aliceblue; text-decoration:none;}
+a{color: aliceblue; text-decoration:none;
+  border: none; outline: none;  
+}
 a:hover{color: black;}
 
 /*Cores para destaque*/

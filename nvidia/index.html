@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/logo-tech.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/nvidia.css">
+    <script src="../javascriptamd/tabela.js"></script>
     <title>TechPeças</title>
 
 </head>
@@ -16,18 +17,266 @@
         </header>
 
         <div class="separador"></div>
-
-
+            <div class="table-container">
+                <div class = "centerselect">  
+                    <select  id="filtro" onchange="filtrarTabela('filtro', 'tabela_nvidia')">
+                        <option value="todos">Todas Gerações</option>
+                        <option value="rtx50">RTX 50 SERIES</option>
+                        <option value="rtx40">RTX 40 SERIES</option>
+                        <option value="rtx30">RTX 30 SERIES</option>
+                    </select>
+            </div> 
             <main>
-                <h2>Placas de Video</h2>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>           
+            <div class="processador">
+                <table id="tabela_nvidia">
+                    <thead>
+                        <tr class="todos">
+                            <th>Placa de Video</th>
+                            <th>Arquitetura NVIDIA</th>
+                            <th>DLSS</th>
+                            <th>Tensor Cores</th>
+                            <th>Ray Tracing Cores</th>
+                            <th>Configurações da Memória</th>
+                        </tr>
+                    </thead>
+                        <!--series 50-->
+                        <tr class="rtx50">
+                            <td>RTX 5090</td>
+                            <td>Blackwell</td>
+                            <td>DLSS 4</td>
+                            <td>5ª geração</td>
+                            <td>4ª geração</td>
+                            <td>32 GB
+                                GDDR7</td>
+                        </tr>
+                        <tr class="rtx50">
+                            <td>RTX 5080</td>
+                            <td>Blackwell</td>
+                            <td>DLSS 4</td>
+                            <td>5ª geração</td>
+                            <td>4ª geração</td>
+                            <td>16 GB
+                                GDDR7</td>
+                        </tr>
+                        <tr class="rtx50">
+                            <td>RTX 5070 Ti</td>
+                            <td>Blackwell</td>
+                            <td>DLSS 4</td>
+                            <td>5ª geração</td>
+                            <td>4ª geração</td>
+                            <td>16 GB
+                                GDDR7</td>
+                        </tr>
+                        <tr class="rtx50">
+                            <td>RTX 5070</td>
+                            <td>Blackwell</td>
+                            <td>DLSS 4</td>
+                            <td>5ª geração</td>
+                            <td>4ª geração</td>
+                            <td>12 GB
+                                GDDR7</td>
+                        </tr>
+                        <!--series 40-->
+                        <tr class="rtx40">
+                            <td>RTX 4090</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>24 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4080 SUPER</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>16 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4080</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>16 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4070 Ti</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>12 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4070 SUPER</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>2 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4070</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>12 GB
+                                GDDR6 / GDDR6X</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4060 Ti</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>16 GB or 8 GB
+                                GDDR6</td>
+                        </tr>
+                        <tr class="rtx40">
+                            <td>RTX 4060</td>
+                            <td>Ada Lovelace</td>
+                            <td>DLSS 3</td>
+                            <td>4ª geração</td>
+                            <td>3ª geração</td>
+                            <td>8 GB
+                                GDDR6</td>
+                        </tr>
+                        <!--series 30-->
+                        <tr class="rtx30">
+                            <td>RTX 3090 Ti</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>24 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3090</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>24 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3080 Ti</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>12 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3080</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>12 GB or 10 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3070 Ti</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>8 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3070</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>8 GB
+                                GDDR6X</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3060 Ti</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>8 GB
+                                GDDR6</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3060</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>12 GB
+                                GDDR6</td>
+                        </tr>
+                        <tr class="rtx30">
+                            <td>RTX 3050</td>
+                            <td>Ampere</td>
+                            <td>DLSS 2</td>
+                            <td>3ª geração</td>
+                            <td>2ª geração</td>
+                            <td>8 GB
+                                GDDR6</td>
+                        </tr>
+                </table>
+            </div>    
             </main>
 
         <section id="recomenda">
             <h2>Algumas recomendações!</h2>
+                <h1>Placas de Vídeo NVIDIA: Qual escolher?</h1>
+                <p>Se você busca desempenho máximo para jogos e criação de conteúdo, a NVIDIA tem opções para todos os perfis! Confira as melhores placas das séries 50, 40 e 30.</p>
+                
+                <h2>🔥 Série RTX 50: O futuro do desempenho gráfico</h2>
+
+                    <p>💻 NVIDIA GeForce RTX 5090 – O topo da nova geração</p>
+                    <p><strong>VRAM:</strong> 24GB GDDR7</p>
+                    <p><strong>Clock Boost:</strong> Até 2800MHz</p>
+                    <p><strong>Consumo:</strong> 450W</p>
+                    <p><strong>Indicado para:</strong> Jogos em 4K e aplicações profissionais de IA.</p>
+
+                
+                <h2>🚀 Série RTX 40: Poder e tecnologia de ponta</h2>
+                    <p >⚡ NVIDIA GeForce RTX 4090 – O rei do desempenho</p>
+                    <p><strong>VRAM:</strong> 24GB GDDR6X</p>
+                    <p><strong>Clock Boost:</strong> Até 2520MHz</p>
+                    <p><strong>Consumo:</strong> 450W</p>
+                    <p><strong>Indicado para:</strong> 4K com Ray Tracing e criação de conteúdo profissional.</p>
+                    <p>💻 NVIDIA GeForce RTX 4070 Ti – O equilíbrio ideal</p>
+                    <p><strong>VRAM:</strong> 12GB GDDR6X</p>
+                    <p><strong>Clock Boost:</strong> Até 2610MHz</p>
+                    <p><strong>Consumo:</strong> 285W</p>
+
+                
+                <h2>🎮 Série RTX 30: Ótima escolha custo-benefício</h2>
+
+                    <p >🔹 NVIDIA GeForce RTX 3080 – Performance top por um ótimo preço</p>
+                    <p><strong>VRAM:</strong> 10GB GDDR6X</p>
+                    <p><strong>Clock Boost:</strong> Até 1710MHz</p>
+                    <p><strong>Consumo:</strong> 320W</p>
+                    <p><strong>Indicado para:</strong> Jogos em 1440p e 4K com bom desempenho.</p>
+                    <p>🔹 NVIDIA GeForce RTX 3060 – Melhor opção para Full HD</p>
+                    <p><strong>VRAM:</strong> 12GB GDDR6</p>
+                    <p><strong>Clock Boost:</strong> Até 1777MHz</p>
+                    <p><strong>Consumo:</strong> 170W</p>
+                    <p><strong>Indicado para:</strong> Jogos em Full HD (1080p) com alto FPS.</p>
+                
+                <h2>💡 Conclusão</h2>
+                <p>A NVIDIA continua liderando o mercado com suas placas de vídeo de alta performance, trazendo inovações como Ray Tracing, DLSS e alto desempenho gráfico.</p>
+                <p>Seja para jogos competitivos ou criação de conteúdo profissional, há uma opção ideal para seu setup. Continue acompanhando o TechPeças para mais novidades do mundo do hardware!</p>
         </section>
         
     </body>

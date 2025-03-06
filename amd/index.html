@@ -17,19 +17,20 @@
         </header>
 
         <div class="separador"></div>
+        <div class="table-container">
             <div class = "centerselect">  
-            <select  id="filtro" onchange="filtrarTabela()">
-                <option value="todos">Todas Gerações</option>
-                <option value="ryzen5000">Ryzen 5000</option>
-                <option value="ryzen7000">Ryzen 7000</option>
-                <option value="ryzen9000">Ryzen 9000</option>
-            </select>
+                <select  id="filtro" onchange="filtrarTabela('filtro', 'tabela_processadores')">
+                    <option value="todos">Todas Gerações</option>
+                    <option value="ryzen5000">Ryzen 5000</option>
+                    <option value="ryzen7000">Ryzen 7000</option>
+                    <option value="ryzen9000">Ryzen 9000</option>
+                </select>
             </div> 
              <main> 
-                    <table id="content_tabela">
+                    <table id="tabela_processadores">
                         <thead>
                             <tr>
-                                <th>Nome do Processador</th>
+                            <th>Nome do Processador</th>
                             <th>Nº de núcleos</th>
                             <th>Nº de Threads</th>
                             <th>Clock Máx</th>
@@ -189,7 +190,7 @@
                             <td>3.8 GHz</td>
                             <td>65W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 5 9600X</td>
                             <td>6</td>
                             <td>12</td>
@@ -197,7 +198,7 @@
                             <td>3.9 GHz</td>
                             <td>65W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 7 9700X</td>
                             <td>8</td>
                             <td>16</td>
@@ -205,7 +206,7 @@
                             <td>3.8 GHz/td>
                             <td>65W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 7 9800X3D</td>
                             <td>8</td>
                             <td>16</td>
@@ -213,7 +214,7 @@
                             <td>4.7 GHz</td>
                             <td>120W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9900X</td>
                             <td>12</td>
                             <td>24</td>
@@ -221,7 +222,7 @@
                             <td>4.4 GHz</td>
                             <td>120W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9900X3D</td>
                             <td>12</td>
                             <td>24</td>
@@ -229,7 +230,7 @@
                             <td>4.4 GHz</td>
                             <td>120W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9950X</td>
                             <td>16</td>
                             <td>32</td>
@@ -237,7 +238,7 @@
                             <td>4.3 GHz</td>
                             <td>170W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9900X3D</td>
                             <td>12</td>
                             <td>24</td>
@@ -245,7 +246,7 @@
                             <td>4.4 GHz</td>
                             <td>120W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9950X</td>
                             <td>16</td>
                             <td>32</td>
@@ -253,7 +254,7 @@
                             <td>4.3 GHz</td>
                             <td>170W</td>
                         </tr>
-                        <tr>
+                        <tr class="ryzen9000">
                             <td>AMD Ryzen™ 9 9950X3D</td>
                             <td>16</td>
                             <td>32</td>
@@ -263,23 +264,236 @@
                         </tr>
                     </table>        
              </main>
+        </div>     
+        <div class="separador2"></div>   
+            <div class = "centerselect">  
+            <select  id="filtro_video" onchange="filtrarTabela('filtro_video', 'tabela_placasvideo')">
+                <option value="todos">Todas Gerações</option>
+                <option value="placa1">Série 6000</option>
+                <option value="placa2">Série 7000</option>
+            </select>
+            </div>
+                <div class="processador">
+                <table id="tabela_placasvideo">
+                    <thead>
+                        <tr>
+                            <th>Nome da Placa de Video</th>
+                            <th>Unidades de computação</th>
+                            <th>Aceleradores de raios</th>
+                            <th>Frequência de jogo</th>
+                            <th>Tamanho máximo de memória</th>
+                            </tr>
+                    </thead>    
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6400</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>2039 MHz</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6500 XT (4GB)</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>2610 MHz</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6500 XT</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>2650 MHz</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6600</td>
+                            <td>28</td>
+                            <td>28</td>
+                            <td>2044 MHz</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6600 XT</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>2359 MHz</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6650 XT</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>2410 MHz</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6700</td>
+                            <td>36</td>
+                            <td>36</td>
+                            <td>2174 MHz</td>
+                            <td>10 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6700 XT</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>2424 MHz</td>
+                            <td>12 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6750 XT</td>
+                            <td>40</td>
+                            <td>40</td>
+                            <td>2495 MHz</td>
+                            <td>12 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6800</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td>1815 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6800 XT</td>
+                            <td>72</td>
+                            <td>72</td>
+                            <td>2015 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6900 XT</td>
+                            <td>80</td>
+                            <td>80</td>
+                            <td>2015 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa1">
+                            <td>AMD Radeon™ RX 6950 XT</td>
+                            <td>80</td>
+                            <td>80</td>
+                            <td>2100 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7600</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>2250 MHz</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7600 XT</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>2470 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7700 XT</td>
+                            <td>54</td>
+                            <td>54</td>
+                            <td>2171 MHz</td>
+                            <td>12 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7800 XT</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td>2124 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7900 GRE</td>
+                            <td>80</td>
+                            <td>80</td>
+                            <td>1880 MHz</td>
+                            <td>16 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7900 XT</td>
+                            <td>84</td>
+                            <td>84</td>
+                            <td>2000 MHz</td>
+                            <td>20 GB</td>
+                        </tr>
+                        <tr class="placa2">
+                            <td>AMD Radeon™ RX 7900 XTX</td>
+                            <td>96</td>
+                            <td>96</td>
+                            <td>2300 MHz</td>
+                            <td>24 GB</td>
+                        </tr>
+                </table>
+                </div>
 
-            
-
-            <aside>
-                <h2>Placas de Video</h2>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                
-            
-            </aside>
 
         <section id="recomenda">
             <h2>Algumas recomendações!</h2>
-        </section>
+            <p>Se você está montando um PC gamer ou deseja atualizar seu setup, escolher o hardware certo faz toda a diferença. A AMD tem se destacado no mercado com processadores poderosos e placas de vídeo eficientes, oferecendo ótimo custo-benefício para diferentes perfis de usuários. Confira abaixo algumas das melhores opções!</p>
         
+        <h2>🔥 Processadores AMD: Qual escolher?</h2>
+        <h3>💻 AMD Ryzen 5 5600 – Melhor custo-benefício para jogos em Full HD</h3>
+        <br>
+        <ul>
+        <div class="container_texto"></div>
+            <li><strong>Núcleos/Threads:</strong> 6/12</li>
+            <li><strong>Clock Base/Turbo:</strong> 3.5GHz / 4.4GHz</li>
+            <li><strong>Cache Total:</strong> 35MB</li>
+            <li><strong>TDP:</strong> 65W</li>
+            <li><strong>Indicado para:</strong> Jogos em 1080p, produtividade leve e multitarefa.</li>
+        </div>    
+        </ul>
+        <h3>⚡ AMD Ryzen 7 7700X – Poder para gamers e criadores de conteúdo</h3>
+        <br>
+        <ul>
+            <li><strong>Núcleos/Threads:</strong> 8/16</li>
+            <li><strong>Clock Base/Turbo:</strong> 4.5GHz / 5.4GHz</li>
+            <li><strong>Cache Total:</strong> 40MB</li>
+            <li><strong>TDP:</strong> 105W</li>
+            <li><strong>Indicado para:</strong> Jogos em alta taxa de FPS, streaming e edição de vídeo.</li>
+        </ul>
+        
+        <h3>🚀 AMD Ryzen 9 7950X3D – O máximo desempenho para games e criação</h3>
+        <br>
+        <ul>
+            <li><strong>Núcleos/Threads:</strong> 16/32</li>
+            <li><strong>Clock Base/Turbo:</strong> 4.2GHz / 5.7GHz</li>
+            <li><strong>Cache Total:</strong> 144MB</li>
+            <li><strong>TDP:</strong> 120W</li>
+            <li><strong>Indicado para:</strong> Gamers exigentes, profissionais de renderização e edição pesada.</li>
+        </ul>
+        
+        <h2>🎮 Placas de Vídeo AMD: Qual a melhor para o seu setup?</h2>
+        <br>
+        <h3>🔹 AMD Radeon RX 6600 – Melhor opção custo-benefício para 1080p</h3>
+        <ul>
+            <li><strong>VRAM:</strong> 8GB GDDR6</li>
+            <li><strong>Clock Boost:</strong> Até 2491MHz</li>
+            <li><strong>Consumo:</strong> 132W</li>
+            <li><strong>Indicado para:</strong> Jogos em Full HD (1080p) com alto FPS.</li>
+        </ul>
+        
+        <h3>🔹 AMD Radeon RX 7700 XT – O equilíbrio perfeito para 1440p</h3>
+        <ul>
+            <li><strong>VRAM:</strong> 12GB GDDR6</li>
+            <li><strong>Clock Boost:</strong> Até 2544MHz</li>
+            <li><strong>Consumo:</strong> 245W</li>
+            <li><strong>Indicado para:</strong> Jogos em Quad HD (1440p) com qualidade máxima.</li>
+        </ul>
+        
+        <h3>🔹 AMD Radeon RX 7900 XTX – A escolha definitiva para 4K</h3>
+        <ul>
+            <li><strong>VRAM:</strong> 24GB GDDR6</li>
+            <li><strong>Clock Boost:</strong> Até 2500MHz</li>
+            <li><strong>Consumo:</strong> 355W</li>
+            <li><strong>Indicado para:</strong> Jogos em 4K e criação de conteúdo profissional.</li>
+        </ul>
+        
+        <h2>💡 Conclusão</h2>
+        <p>A AMD oferece opções para todos os bolsos e necessidades, desde processadores eficientes para setups de entrada até modelos de alto desempenho para entusiastas e profissionais. Da mesma forma, suas placas de vídeo entregam excelente qualidade gráfica por um ótimo custo-benefício, tornando-se escolhas ideais para gamers e criadores de conteúdo.</p>
+        <p>Se você está montando ou atualizando seu PC, considere essas recomendações para obter o melhor desempenho possível sem gastar além do necessário. Quer mais dicas? Continue acompanhando o TechPeças para ficar por dentro das novidades do mundo do hardware!</p>
+        </section>     
     </body>
 
         <br>

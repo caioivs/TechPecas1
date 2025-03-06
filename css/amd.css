@@ -29,6 +29,14 @@ aside{
     cursor: pointer;
 }
 
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
  /*Cabeçalho*/
 header{background:linear-gradient(to right,#f26522,#000000,#000000); color: white; padding: 1%;
     position: fixed; width: 100%; z-index: 1000; top: 0px;
@@ -63,7 +71,9 @@ h1,h2,h3,h4,h5,h6{padding-top: 0.40%; padding-bottom: 0.25%;}
 .seprador_aside{
     margin-top:5% /*separador aside do main*/
 }
-
+.separador2{
+    margin-top: 20px;/*seprador geral, caso necessario criar outro */
+}
 /*Configurações dos paragrafos/textos*/
 p{
     padding-top: 1%; padding-bottom: 1%;
@@ -79,20 +89,42 @@ p{
     .separador{margin-top: 23%;}
     .seprador_aside{margin-top: 5%;}
 }
-/*tabela processador*/
-#content_tabela{
+/*tabelas*/
+#tabela_processadores{
     border-collapse: collapse;
-    width: 100%; 
-
+    width: 100%;
+    min-width: 600px;
 }
 
+#tabela_placasvideo{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+}
 
+/*divs para tabelas*/
+
+.processador{
+        background-color: white;  
+        padding: 1.5%; margin: auto; width: 90%;
+        border-radius: 12px; 
+        box-shadow: 5px 5px 2px  #ed1c24;
+        margin-top: 20px;     
+}
 
 td,th{
-    border: 1px solid #f26522; padding: 8px; text-align: center;
+    border: 2px solid #f26522; padding: 8px; text-align: center;
 }
 
 th{
     background:linear-gradient(to right,#f26522,#ed1c24);
     font-weight:bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 10px;
 }
